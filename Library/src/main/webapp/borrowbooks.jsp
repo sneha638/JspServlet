@@ -16,14 +16,14 @@
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-            margin: 50px auto; /* Centered with space from top */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
             text-align: center;
         }
         h2 {
             margin-bottom: 30px;
             font-size: 28px;
-            color: #4a4a4a; /* Slightly muted dark gray */
+            color: #4a4a4a;
         }
         form {
             display: flex;
@@ -48,32 +48,32 @@
             padding: 12px 20px;
             font-size: 16px;
             color: #fff;
-            background-color: #b0b0b0; /* Ash color for consistency */
-            border: 2px solid #a0a0a0; /* Slightly darker border */
+            background-color: #b0b0b0;
+            border: 2px solid #a0a0a0;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+            transition: background-color 0.3s, border-color 0.3s;
         }
         input[type="submit"]:hover {
-            background-color: #9a9a9a; /* Darker ash color on hover */
-            border-color: #888888; /* Darker border on hover */
+            background-color: #9a9a9a;
+            border-color: #888888;
         }
         input[type="submit"]:active {
-            background-color: #8a8a8a; /* Even darker ash color on active */
-            border-color: #666666; /* Darker border on active */
+            background-color: #8a8a8a;
+            border-color: #666666;
         }
         .links {
             margin-top: 20px;
         }
         .links a {
             text-decoration: none;
-            color: #b0b0b0; /* Ash color for links */
+            color: #b0b0b0;
             font-weight: bold;
             margin-right: 20px;
             font-size: 16px;
         }
         .links a:hover {
-            color: #9a9a9a; /* Darker ash color on hover */
+            color: #9a9a9a;
             text-decoration: underline;
         }
     </style>

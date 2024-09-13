@@ -1,4 +1,5 @@
-<%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.util.List" %>
+<%@ page import="com.example.library.Book" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
             font-family: 'Georgia', serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f8f7; /* Light beige for a library-like feel */
+            background-color: #f9f8f7;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -19,16 +20,16 @@
             max-width: 1000px;
             background-color: #fff;
             padding: 20px;
-            margin-top: 30px; /* Increased margin for better spacing */
+            margin-top: 30px;
             border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for enhanced depth */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
         h2 {
-            color: #4a4a4a; /* Slightly muted dark gray */
+            color: #4a4a4a;
             margin-bottom: 20px;
-            font-size: 28px; /* Larger font size for headings */
+            font-size: 28px;
         }
 
         table {
@@ -45,7 +46,7 @@
         }
 
         th {
-           background-color: #b0b0b0;
+            background-color: #b0b0b0;
             color: #fff;
         }
 
@@ -62,18 +63,18 @@
             padding: 10px 20px;
             font-size: 16px;
             color: #fff;
-            background-color: #b0b0b0; /* Ash color */
+            background-color: #b0b0b0;
             text-decoration: none;
             border-radius: 5px;
             margin: 10px;
         }
 
         .button-container a:hover {
-            background-color: #8c8c8c; /* Slightly darker shade on hover */
+            background-color: #8c8c8c;
         }
 
         .button-container a:active {
-            background-color: #6e6e6e; /* Even darker shade on click */
+            background-color: #6e6e6e;
         }
     </style>
 </head>
@@ -88,14 +89,13 @@
                 <th>Available</th>
             </tr>
             <%
-                ResultSet rs = (ResultSet) request.getAttribute("books");
-                if (rs != null) {
-                    try {
-                        while (rs.next()) {
-                            int id = rs.getInt("id");
-                            String title = rs.getString("title");
-                            String author = rs.getString("author");
-                            boolean available = rs.getBoolean("available");
+                List<Book> books = (List<Book>) request.getAttribute("books");
+                if (books != null && !books.isEmpty()) {
+                    for (Book book : books) {
+                        int id = book.getId();
+                        String title = book.getTitle();
+                        String author = book.getAuthor();
+                        boolean available = book.isAvailable();
             %>
             <tr>
                 <td><%= id %></td>
@@ -104,9 +104,6 @@
                 <td><%= available ? "Yes" : "No" %></td>
             </tr>
             <%
-                        }
-                    } catch (Exception e) {
-                        e.printStackTrace();
                     }
                 } else {
             %>

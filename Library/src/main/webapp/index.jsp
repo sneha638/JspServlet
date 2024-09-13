@@ -4,11 +4,11 @@
     <title>Library Management System</title>
     <style>
         body {
-            font-family: 'Georgia', serif; /* A more traditional, book-like font */
-            background-color: #f9f8f7; /* Light beige background */
+            font-family: 'Georgia', serif;
+            background-color: #f9f8f7;
             margin: 0;
             padding: 0;
-            color: #333; /* Darker text color for better readability */
+            color: #333;
         }
 
         .container {
@@ -17,15 +17,15 @@
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin-top: 50px; /* Space from the top */
+            margin-top: 50px;
         }
 
         h2 {
             margin-bottom: 30px;
             font-size: 28px;
-            color: #4a4a4a; /* Slightly muted dark gray */
+            color: #4a4a4a;
         }
 
         .button {
@@ -34,22 +34,22 @@
             padding: 15px 25px;
             font-size: 18px;
             color: white;
-            background-color: #b0b0b0; /* Ash color background */
+            background-color: #b0b0b0;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            border: 2px solid #a0a0a0; /* Slightly darker border */
-            transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+            border: 2px solid #a0a0a0;
+            transition: background-color 0.3s, border-color 0.3s;
         }
 
         .button:hover {
-            background-color: #9a9a9a; /* Darker ash color on hover */
-            border-color: #888888; /* Darker border on hover */
+            background-color: #9a9a9a;
+            border-color: #888888;
         }
 
         .button:active {
-            background-color: #8a8a8a; /* Even darker ash color on active */
-            border-color: #666666; /* Darker border on active */
+            background-color: #8a8a8a;
+            border-color: #666666;
         }
     </style>
 </head>
