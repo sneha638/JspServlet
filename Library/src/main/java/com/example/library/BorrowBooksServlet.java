@@ -1,7 +1,6 @@
 package com.example.library;
 
 import jakarta.servlet.ServletException;
-
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -13,7 +12,7 @@ import org.hibernate.cfg.Configuration;
 import java.io.IOException;
 
 @WebServlet("/borrowbooks")
-public class BorrowBooksServlet extends HttpServlet {
+public class  BorrowBooksServlet extends HttpServlet {
     private SessionFactory sessionFactory;
     public BorrowBooksServlet(){
         sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();

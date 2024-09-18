@@ -58,7 +58,7 @@
         <h2>Welcome to the Library Management System</h2>
         <a href="addbook.jsp" class="button">Add New Book</a><br>
         <a href="showallbooks" class="button">Show All Books</a><br>
-        <a href="borrowbooks.jsp" class="button">Borrowed Books</a>
+        <a href="borrowbooks.jsp" class="button">Borrow Books</a>
     </div>
 </body>
 </html>

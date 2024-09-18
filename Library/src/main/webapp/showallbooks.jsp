@@ -116,6 +116,7 @@
         </table>
         <div class="button-container">
             <a href="addbook.jsp">Add New Book</a>
+            <a href="borrowbooks.jsp" class="button">Borrow Books</a>
             <a href="index.jsp">Back to Home</a>
         </div>
     </div>
